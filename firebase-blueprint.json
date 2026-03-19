@@ -1,0 +1,62 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile information",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "displayName": { "type": "string" },
+        "photoURL": { "type": "string", "format": "uri" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "email"]
+    },
+    "Resume": {
+      "title": "Resume",
+      "description": "A user's resume data",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "title": { "type": "string" },
+        "name": { "type": "string" },
+        "data": { "type": "object" },
+        "template": { "type": "string" },
+        "updatedAt": { "type": "string", "format": "date-time" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "data"]
+    },
+    "SharedResume": {
+      "title": "SharedResume",
+      "description": "A publicly shared resume",
+      "type": "object",
+      "properties": {
+        "data": { "type": "object" },
+        "template": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["data", "template"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User profile documents"
+    },
+    "/resumes/{resumeId}": {
+      "schema": "Resume",
+      "description": "User resume documents (auto-save)"
+    },
+    "/saved_resumes/{resumeId}": {
+      "schema": "Resume",
+      "description": "User's manually saved resume drafts"
+    },
+    "/shared_resumes/{resumeId}": {
+      "schema": "SharedResume",
+      "description": "Publicly shared resumes"
+    }
+  }
+}
