@@ -114,8 +114,8 @@ const initialData: ResumeData = {
       year: '',
     },
   ],
-  technicalSkills: [''],
-  softSkills: [''],
+  technicalSkills: [],
+  softSkills: [],
   languages: [
     { id: '1', name: '', level: '' },
   ],
