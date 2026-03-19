@@ -152,7 +152,7 @@ export const EditPage = () => {
                 onChange={(e) => setData({ ...data, personalInfo: { ...data.personalInfo, fullName: e.target.value } })}
                 className="w-full px-4 py-2 rounded-lg border border-neutral-200 outline-none transition-all focus:ring-2"
                 style={{ '--tw-ring-color': data.customization.primaryColor } as any}
-                placeholder="John Doe"
+                placeholder="Full Name"
               />
           </div>
           <div className="space-y-2">
@@ -163,7 +163,7 @@ export const EditPage = () => {
               onChange={(e) => setData({ ...data, personalInfo: { ...data.personalInfo, email: e.target.value } })}
               className="w-full px-4 py-2 rounded-lg border border-neutral-200 outline-none transition-all focus:ring-2"
               style={{ '--tw-ring-color': data.customization.primaryColor } as any}
-              placeholder="john@example.com"
+              placeholder="name@example.com"
             />
           </div>
           <div className="space-y-2">
@@ -174,7 +174,7 @@ export const EditPage = () => {
               onChange={(e) => setData({ ...data, personalInfo: { ...data.personalInfo, phone: e.target.value } })}
               className="w-full px-4 py-2 rounded-lg border border-neutral-200 outline-none transition-all focus:ring-2"
               style={{ '--tw-ring-color': data.customization.primaryColor } as any}
-              placeholder="+1 (555) 000-0000"
+              placeholder="+91 987654310"
             />
           </div>
           <div className="space-y-2">
@@ -185,7 +185,7 @@ export const EditPage = () => {
               onChange={(e) => setData({ ...data, personalInfo: { ...data.personalInfo, location: e.target.value } })}
               className="w-full px-4 py-2 rounded-lg border border-neutral-200 outline-none transition-all focus:ring-2"
               style={{ '--tw-ring-color': data.customization.primaryColor } as any}
-              placeholder="New York, NY"
+              placeholder="street, city, state, country"
             />
           </div>
           <div className="space-y-2">
