@@ -114,12 +114,10 @@ const initialData: ResumeData = {
       year: '',
     },
   ],
-  technicalSkills: ['React', 'TypeScript', 'Node.js', 'Next.js', 'Tailwind CSS', 'PostgreSQL', 'AWS', 'Docker'],
-  softSkills: ['Leadership', 'Communication', 'Problem Solving', 'Teamwork', 'Adaptability'],
+  technicalSkills: [''],
+  softSkills: [''],
   languages: [
-    { id: '1', name: 'English', level: 'Fluent' },
-    { id: '2', name: 'Telugu', level: 'Fluent' },
-    { id: '3', name: 'Hindi', level: 'Native' },
+    { id: '1', name: '', level: '' },
   ],
   organizations: [
     {
