@@ -1,6 +1,6 @@
 # 📄 ResumeCraft
 
-> An AI-powered resume builder built with React, TypeScript, Vite, and Google Gemini — backed by Firebase and deployed on Vercel.
+> An AI-powered resume builder built with React, TypeScript, Vite, and Google Gemini — backed by Firebase and deployed on Vercel. 
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-black?logo=vercel)](https://resumecraft-topaz.vercel.app)
 [![TypeScript](https://img.shields.io/badge/TypeScript-98%25-blue?logo=typescript)](https://www.typescriptlang.org/)
